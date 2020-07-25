@@ -1,0 +1,39 @@
+// Use of a not defined variable in arithmetic operation ('c' is not defined)
+function f(a,b) { 
+d = a + b + c; 
+return d; 
+}
+
+// Missing semicolon after arithmetic operation 
+function f(a,b) { 
+d = a + b
+return d; 
+}
+
+//Function without return any value
+function f(a,b) { 
+d = a + b; 
+}
+
+//Using not declared variable
+function f(a,b) {
+    d = a + b + c; 
+    e = d + 2;
+    return e;
+}
+
+function f(a,b) { 
+return a+b; 
+}
+
+// Mismatch in arguments number: too few arguments
+f(2);
+// Mismatch in arguments number: too many arguments
+f(2,1,4);
+
+// Missing right parenthesis:
+f(1,1
+f(2,2;
+
+// Correct call:
+f(2,2);

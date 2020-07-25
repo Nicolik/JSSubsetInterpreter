@@ -1,0 +1,53 @@
+// error: missing ; after array definition
+aa = [10]
+
+bb = [10, 20, 30];
+// When i = bb.length there will be accessing array out of range
+for (i = 0; i < bb.length + 1; i++) { 
+    print(bb[i]); 
+}
+
+// Trying to set element of array out of range
+bb[4] = 10;
+
+//Lexical error: missing "
+str = "ciao
+
+//Lexical error: identifier cannot start with NUMBER
+2a = 20;
+
+str = "ciao";
+str[0]
+// str is string, invalid operation
+str[1] = "o";
+
+// Not expected NAME
+aa aa.push(50);
+
+// Not expected NUMBER
+10 10;
+
+// Trying to compare not double variables: (this always return false)
+"ciao" > 2
+
+// Trying to insert non double element in array:
+aa = [10, "ciao", 20];
+
+// Trying to push non double element in array:
+aa.push("prova");
+
+/*
+    /*
+        nested comment (not allowed)
+    */
+*/ 
+
+/*
+    closed comment
+*/
+
+/*
+    unclosed comment
+    
+
+
